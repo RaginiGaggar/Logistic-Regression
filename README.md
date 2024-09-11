@@ -78,10 +78,10 @@ where:
 
 Gradient descent is used to minimize the cost function by iteratively updating the weight and bias:
 
-- **Update Equations**:
-  - \( w := w - \text{learning\_rate} \cdot \frac{\partial J}{\partial w} \)
-  - \( b := b - \text{learning\_rate} \cdot \frac{\partial J}{\partial b} \)
-    
+**Update Equations**:
+  - `w = w - learning_rate * (partial J / partial w)`
+  - `b = b - learning_rate * (partial J / partial b)`
+
 ```python
 def gradient_descent(X, y, w, b, learning_rate, num_iterations):
     m = X.shape[0]
